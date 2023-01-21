@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+    
+    
+}
+
+p, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.title {
+    padding: 0px;
+    margin: 0px;
+}
+
+.result {
+    min-height: 20px;
+}
+
+.game-space {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    align-content: space-between;
+    border-style: solid;
+    border-color: blue;
+    gap: 50px;
+
+}
+
+
+.game-board {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-style: solid;
+    border-color: rgb(255, 251, 0);
+    padding: 10px;
+}
+
+.user-space-display, .computer-space-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-space-result, .computer-space-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    min-height: 30px;
+    border-style: solid;
+    border-color: rgb(255, 0, 140);
+}
+
+.scoreboard {
+    display: flex;
+    min-width: 220px;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgb(21, 255, 0);
+    gap: 10px;
+
+}
+
+.score {
+    align-self: center;
+}
+
+.scoreboard-gagnees, .scoreboard-nulles, .scoreboard-perdues {
+    display: flex;
+    gap: 10px;
+}
+
+#button-rejouer {
+    display: flex;
+    max-height: 30px;
+    align-items: center;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+}
