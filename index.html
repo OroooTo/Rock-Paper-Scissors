@@ -5,45 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
 
-    <title>Pierre/Feuille/Ciseaux</title>
+    <title>ROCK/PAPER/SCISSORS</title>
   </head>
   <body>
-    <div class="title">Pierre/Feuille/Ciseaux</div>
-    <div class="result"></div>
-    <div class="game-space">
+    <div class="container">
+      <div class="result-game-space">FIRST PLAYER TO WIN 5 ROUNDS</div>
       <div class="game-board">
         <div class="user-space-display">
-          JOUEUR
+          <div class="player-name">PLAYER</div>
           <div class="user-space-result"></div>
         </div>
+        <div class="result">
+          <div class="result-text"></div>
+        </div>
         <div class="computer-space-display">
-          ORDINATEUR
+          <div class="computer-name">COMPUTER</div>
           <div class="computer-space-result"></div>
         </div>
       </div>
-      <button id="button-rejouer">REJOUER</button>
+
+      <div class="player-choices-space">
+        <div class="player-choices">
+          <button id="rock"><img src="./images/rock.svg" alt="ROCK" /></button>
+          <button id="paper">
+            <img src="./images/paper.svg" alt="PAPER" />
+          </button>
+          <button id="scissors">
+            <img src="./images/scissors.svg" alt="SCISSORS" />
+          </button>
+        </div>
+      </div>
       <div class="scoreboard">
-        <div class="score">SCORE</div>
-        <div class="scoreboard-gagnees">
-          PARTIES GAGNÉES :
-          <div id="won-games" class="score-gagnees">0</div>
+        <div class="player-rounds-scoreboard">
+          <div class="player-rounds-name">PLAYER</div>
+          <div class="player-rounds">
+            ROUNDS WON
+
+            <div class="won-rounds-icons"></div>
+          </div>
         </div>
-        <div class="scoreboard-nulles">
-          PARTIES NULLES :
-          <div id="draw-games" class="score-nulles">0</div>
+        <div class="draw-rounds-space">
+          DRAW ROUNDS
+          <div class="draw-rounds">0</div>
         </div>
-        <div class="scoreboard-perdues">
-          PARTIES PERDUES :
-          <div id="lost-games" class="score-perdues">0</div>
+        <div class="computer-rounds-scoreboard">
+          <div class="computer-rounds-name">COMPUTER</div>
+          <div class="computer-rounds">
+            ROUNDS WON
+            <div class="lost-rounds-icons"></div>
+          </div>
+        </div>
+      </div>
+      <div class="games-result">
+        <div class="score">
+          <div class="scoreboard-title">SCOREBOARD</div>
+        <div class="scoreboard-won">
+          WON :
+          <div class="won-games">0</div>
+        </div>
+        <div class="scoreboard-lost">
+          LOST :
+          <div class="lost-games">0</div>
         </div>
       </div>
     </div>
-    <div class="player-choices">
-      <button id="pierre">PIERRE</button>
-      <button id="feuille">FEUILLE</button>
-      <button id="ciseaux">CISEAUX</button>
-    </div>
-    <script src="./javascript.js"></script>
+      <div class="play-again-button"></div>
+    
   </body>
 </html>
